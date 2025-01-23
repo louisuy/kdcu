@@ -42,7 +42,7 @@ export default function About() {
             upcoming February 22, 2025.
           </p>
 
-          <h2 className="text-4xl font-bold mt-24">OUR STORY</h2>
+          <h2 className="text-4xl font-bold">OUR STORY</h2>
 
           <p className="text-xl">
             KDCU started as a passion project by a group of teammates from The

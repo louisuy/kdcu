@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
+import Link from "next/link"; // Import Link from next/link
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,28 +19,27 @@ export default function RootLayout({
         <nav className="bg-stone-950">
           <div className="flex flex-col sm:flex-row justify-between items-center px-8">
             {/* Navigation Links */}
-            {/* Navigation Links */}
             <ul className="hidden sm:flex sm:flex-row gap-12 text-white text-lg sm:text-2xl">
               <li>
-                <a href="/" className="hover:underline">
+                <Link href="/" className="hover:underline">
                   HOME
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:underline">
+                <Link href="/about" className="hover:underline">
                   ABOUT
-                </a>
+                </Link>
               </li>
 
               {/* <li>
-                <a href="#" className="hover:underline">
+                <Link href="#" className="hover:underline">
                   OUR STORY
-                </a>
+                </Link>
               </li> */}
               <li>
-                <a href="https://forms.gle/adbZ6EnmkahXntrE7" className="hover:underline">
+                <Link href="https://forms.gle/adbZ6EnmkahXntrE7" className="hover:underline" target="_blank" rel="noopener noreferrer">
                   REGISTER
-                </a>
+                </Link>
               </li>
             </ul>
 
@@ -84,24 +84,24 @@ export default function RootLayout({
                 <h4 className="text-lg font-bold mb-4">INFORMATION</h4>
                 <ul className="space-y-2 font-light">
                   <li>
-                    <a href="/" className="hover:underline">
+                    <Link href="/" className="hover:underline">
                       HOME
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/about" className="hover:underline">
+                    <Link href="/about" className="hover:underline">
                       ABOUT
-                    </a>
+                    </Link>
                   </li>
                   {/* <li>
-                    <a href="#" className="hover:underline">
+                    <Link href="#" className="hover:underline">
                       OUR STORY
-                    </a>
+                    </Link>
                   </li> */}
                   <li>
-                    <a href="https://forms.gle/adbZ6EnmkahXntrE7" className="hover:underline">
+                    <Link href="https://forms.gle/adbZ6EnmkahXntrE7" className="hover:underline" target="_blank" rel="noopener noreferrer">
                       REGISTER
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -111,44 +111,44 @@ export default function RootLayout({
                 <h4 className="text-lg font-bold mb-4">CONNECT WITH US</h4>
                 <ul className="space-y-2 font-light">
                   <li>
-                    <a
-                      href="https://www.instagram.com/thepixiesdance/"
+                    <Link
+                      href="https://www.instagram.com/kdcu.ae/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline"
                     >
                       INSTAGRAM
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="https://www.youtube.com/@THEPIXIESDANCE"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline"
                     >
                       YOUTUBE
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="https://primestagedxb.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline"
                     >
                       PRIMESTAGE DXB
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="https://www.instagram.com/sandboxswapmeet/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline"
                     >
                       SANDBOX SWAPMEET
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
